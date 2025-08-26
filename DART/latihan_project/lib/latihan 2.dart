@@ -11,14 +11,29 @@
 //   print("keliling : $keliling");
 // }
 
-void main(List<String> args) {
-  List<String> Buah = ["apel", "Pisang", "Pir", "jeruk", "mangga"];
-  print(Buah);
-  print(Buah[0]);
-  print(Buah[3]);
-  print(Buah[1]);
+// void main(List<String> args) {
+//   List<String> Buah = ["apel", "Pisang", "Pir", "jeruk", "mangga"];
+//   print(Buah);
+//   print(Buah[0]);
+//   print(Buah[3]);
+//   print(Buah[1]);
 
-  print(Buah.length);
-  Buah.addAll(["Semangga", "Apel"]);
-  print(Buah.indexOf("Pir"));
+//   print(Buah.length);
+//   Buah.addAll(["Semangga", "Apel"]);
+//   print(Buah.indexOf("Pir"));
+//   print(Buah.indexOf(Buah[3] = "Pir"));
+//   Buah.sort();
+//   // Buah.forEach((Buah)=)
+// }
+
+import 'dart:io';
+
+void main(List<String> args) {
+  String? name;
+  stdout.write("Masukkan Nama:");
+  name = stdin.readLineSync();
+  stdout.write("Masukkan Usia:");
+  int usia = int.parse(stdin.readLineSync()!);
+  print(name);
+  print(usia);
 }
