@@ -1,13 +1,32 @@
-void main() {
-  String name = "Arya Andromeda";
-  int usia = 20;
-  double berat = 73;
-  num tinggi_badan = 170;
-  dynamic skill = "Makan";
+import 'dart:io';
 
-  print(name);
-  print(usia);
-  print(berat);
-  print(tinggi_badan);
-  print(skill);
+void main() {
+  stdout.write("Masukkan angka (1-7): ");
+  int angka = int.parse(stdin.readLineSync()!);
+
+  switch (angka) {
+    case 1:
+      print("Hari ini adalah Senin");
+      break;
+    case 2:
+      print("Hari ini adalah Selasa");
+      break;
+    case 3:
+      print("Hari ini adalah Rabu");
+      break;
+    case 4:
+      print("Hari ini adalah Kamis");
+      break;
+    case 5:
+      print("Hari ini adalah Jumat");
+      break;
+    case 6:
+      print("Hari ini adalah Sabtu");
+      break;
+    case 7:
+      print("Hari ini adalah Minggu");
+      break;
+    default:
+      print("Input tidak valid, masukkan angka 1-7");
+  }
 }
